@@ -1,0 +1,19 @@
+meta {
+  name: Measurement
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.openaq.org/v3/locations/225789
+  body: none
+  auth: inherit
+}
+
+headers {
+  X-API-KEY: {{API_KEY}}
+}
+
+assert {
+  res.status: eq 200
+}
