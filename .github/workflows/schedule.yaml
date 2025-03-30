@@ -1,0 +1,29 @@
+name: Schedule
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs every day at midnight UTC
+  workflow_dispatch:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
+      - name: Install dependencies
+        run: npm install -g @usebruno/cli
+      - name: Run tests
+        working-directory: ./OpenAQ
+        continue-on-error: true
+        run: bru run --env Live --reporter-html report.html
+        
+      - name: Print Hello
+        run: echo "hello"
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+            path: OpenAQ/report.html
