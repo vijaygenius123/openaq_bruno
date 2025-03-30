@@ -1,3 +1,7 @@
 node_modules/
 .env
 .artifacts/
+# Allure reports and results
+OpenAQ/allure-results/
+OpenAQ/allure-report/
+OpenAQ/junit.xml
