@@ -2,7 +2,7 @@ name: Schedule
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # Runs every 30 minutes
+    - cron: '0 0 * * *' # Runs every day at midnight UTC
   workflow_dispatch:
   push:
 
@@ -28,6 +28,8 @@ jobs:
         working-directory: ./OpenAQ
         continue-on-error: true
         run: bru run --env Live --reporter-junit junit.xml
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
       - name: Prepare Allure results
         working-directory: ./OpenAQ
         if: always()
