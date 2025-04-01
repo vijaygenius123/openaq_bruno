@@ -1,11 +1,11 @@
 meta {
-  name: Measurement
+  name: Locations
   type: http
-  seq: 2
+  seq: 3
 }
 
 get {
-  url: https://api.openaq.org/v3/locations/225789
+  url: https://api.openaq.org/v3/locations
   body: none
   auth: inherit
 }
@@ -20,5 +20,5 @@ assert {
 }
 
 docs {
-  Get Measurement of Location
+  Get all Locations
 }
