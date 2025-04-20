@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","169","res.body.results isArray","","Sun Apr 20 00:22:26 UTC 2025","passed","Sun Apr 20 00:22:26 UTC 2025","","Measurement","https://api.openaq.org/v3/locations/225789",""
+"","108","res.body.results isArray","","Sun Apr 20 00:22:26 UTC 2025","passed","Sun Apr 20 00:22:26 UTC 2025","","Locations","https://api.openaq.org/v3/locations",""
+"","169","res.status eq 200","","Sun Apr 20 00:22:26 UTC 2025","passed","Sun Apr 20 00:22:26 UTC 2025","","Measurement","https://api.openaq.org/v3/locations/225789",""
+"","108","res.status eq 200","","Sun Apr 20 00:22:26 UTC 2025","passed","Sun Apr 20 00:22:26 UTC 2025","","Locations","https://api.openaq.org/v3/locations",""
