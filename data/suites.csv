@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","159","res.status eq 200","","2026-10-11","passed","2026-10-11","","Locations","Locations",""
+"","228","res.status eq 200","","2026-10-11","passed","2026-10-11","","Measurement","Measurement",""
+"","228","res.body.results isArray","","2026-10-11","passed","2026-10-11","","Measurement","Measurement",""
+"","159","res.body.results isArray","","2026-10-11","passed","2026-10-11","","Locations","Locations",""
